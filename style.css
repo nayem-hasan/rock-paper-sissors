@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: whitesmoke;
+  color: #42445A;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px 0px;
+  letter-spacing: -3px;
+  word-spacing: 5px;
+}
+
+body {
+  background-color: #090C2F;
+  color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.score-board p {
+  background-color: red;
+  border-radius: 3px;
+  color: white;
+  padding: 2px;
+  position: absolute;
+  width: 50px;
+  text-align: center;
+}
+
+.score-board {
+  margin: 20px auto;
+  border: 3px solid aqua;
+  border-radius: 5px;
+  width: 170px;
+  height: 80px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.user-lebel {
+  top: 25px;
+  left: -30px;
+}
+
+.comp-lebel {
+  top: 25px;
+  right: -30px;
+}
+
+.score-board span {
+  font-size: 2rem;
+}
+
+.comp-choice-note {
+  color: lightgreen;
+  font-size: 0.8rem;
+
+}
+
+.win-loss-note {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+img {
+  width: 60px;
+  margin: 20px 10px;
+  border: 3px solid aqua;
+  border-radius: 50%;
+}
+
+.green-glow {
+  border-color: #00FF2D;
+}
+
+.red-glow {
+  border-color: #FF0000;
+}
+
+.blue-glow {
+  border-color: #B57DE7;
+}
