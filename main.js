@@ -103,16 +103,3 @@ function main() {
   })
 }
 main();
-
-/*function finished() {
-  if (userScore == 10) {
-    alert(named + " have won the game !🥳🥳");
-  }
-  else if(compScore == 10) {
-    alert(named + " have won the game !😢😢");
-  }
-  else {
-    
-  }
-}
-finished();*/
