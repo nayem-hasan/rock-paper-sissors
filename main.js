@@ -38,6 +38,11 @@ function win(userChoices, COMPCHOICE) {
   RESULT_P.innerHTML = " You Won! 😋";
   document.getElementById(userChoices).classList.add('green-glow');
   setTimeout(() => document.getElementById(userChoices).classList.remove("green-glow"), 400);
+  if (userScore==20) {
+    alert("You have won the game!🎉🥳🥳🥳🎊 .The game will restart !");
+    location.reload();
+  }
+  
     
 }
 
@@ -49,11 +54,13 @@ function lost(userChoices, COMPCHOICE) {
   RESULT_P.innerHTML = " Computer won! 😭"
   document.getElementById(userChoices).classList.add('red-glow');
   setTimeout(() => document.getElementById(userChoices).classList.remove("red-glow"), 400);
+  if (compScore==20){
+    alert("Computer have won the game! Boooo 😛😛 . The game will restart ! Try again.");
+    location.reload();
+  }
 }
 
 function draw(userChoices, COMPCHOICE) {
-  COMPSCORE_SPAN.innerHTML = compScore
-  USERSCORE_SPAN.innerHTML = userScore;
   CHOICENOTE_P.innerHTML = "Computer choose " + getCompChoices();
   RESULT_P.innerHTML = " it's a draw..! 😤"
   document.getElementById(userChoices).classList.add('blue-glow');
